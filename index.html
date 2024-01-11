@@ -6,34 +6,27 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Tic Tac Toe</title>
-    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
-
 </head>
-<body style="background-color: #ECECEC">
-    <h1 id="header" align="center">Tic Tac Toe</h1>
-    <p id="score" align="center">X: 0 | O: 0</p>
-    <table id="field" align="center">
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-    <br>
-    <div align="center">
-        <button id="start-button" onclick="startGame()">Start Game</button>
+<body>
+    <div class="turn-container">
+        <h3>Tic Tac Toe</h3>
+        <div class="turn-box align">X</div>
+        <div class="turn-box align">O</div>
+        <div class="bg"></div>
     </div>
-
+    <div class="main-grid">
+        <div class="box align">0</div>
+        <div class="box align">1</div>
+        <div class="box align">2</div>
+        <div class="box align">3</div>
+        <div class="box align">4</div>
+        <div class="box align">5</div>
+        <div class="box align">6</div>
+        <div class="box align">7</div>
+        <div class="box align">8</div>
+    </div>
+    <h2 id="results"></h2>
+    <button id="play-again">Play Again</button>
     <script src="js/script.js"></script>
 </body>
 </html>
