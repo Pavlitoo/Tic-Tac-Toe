@@ -1,0 +1,35 @@
+#field td{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    color: black;
+}
+button{
+    background-color: #2B2B2B;
+    font-size: 18px;
+    color: white;
+    border: 2px solid #4F5151;
+    border-radius: 5%;
+    width: 200px;
+    height: 50px;
+}
+
+.celebration {
+    animation: celebrationAnimation 2s ease-in-out;
+}
+
+@keyframes celebrationAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
